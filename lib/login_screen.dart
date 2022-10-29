@@ -51,12 +51,17 @@ class LoginScreen extends StatelessWidget {
                   print(value);
                 },
                 keyboardType: TextInputType.visiblePassword,
+                obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   prefixIcon: Icon(
+                    Icons.lock,
+                  ),
+                  suffixIcon: Icon(
                     Icons.remove_red_eye,
                   ),
                   labelText: 'Password',
+
                 ),
               ),
             ],
