@@ -25,6 +25,7 @@ class LoginScreen extends StatelessWidget {
                   //textAlign: TextAlign.start,
                 ),
               ),
+              SizedBox(height: 15,),
               TextFormField(
                 onFieldSubmitted: (value){
                   print(value);
@@ -41,6 +42,7 @@ class LoginScreen extends StatelessWidget {
                   labelText: 'Email',
                 ),
               ),
+              SizedBox(height: 15,),
               TextFormField(
                 onFieldSubmitted: (value){
                   print(value);
@@ -48,7 +50,7 @@ class LoginScreen extends StatelessWidget {
                 onChanged: (value){
                   print(value);
                 },
-                keyboardType: TextInputType.emailAddress,
+                keyboardType: TextInputType.visiblePassword,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   prefixIcon: Icon(
