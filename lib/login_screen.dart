@@ -75,7 +75,7 @@ class LoginScreen extends StatelessWidget {
                   Container(
                     width: double.infinity,
                     height: 50,
-                    child: MaterialButton(
+                    child: MaterialButton(   // زرار
                       color: Colors.blue,
                       onPressed: (){
                         print(emailController.text);
@@ -101,7 +101,8 @@ class LoginScreen extends StatelessWidget {
                           onPressed: (){},
                           child: Text(
                             'Register Now',
-                          ),),
+                          ),
+                      ),
                     ],
                   ),
               ]
