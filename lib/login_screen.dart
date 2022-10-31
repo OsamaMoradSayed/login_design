@@ -48,24 +48,24 @@ class LoginScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 15,),
                   TextFormField(
-                    controller: passwordController,
-                    onFieldSubmitted: (value){
+                    controller: passwordController,   // اقدر اتحكم في اللي جواها
+                    onFieldSubmitted: (value){    // اطلع القيمة اللي جواها لما اضغط submit
                       print(value);
                     },
-                    onChanged: (value){
+                    onChanged: (value){    // اقدر اطلع القيمة اللي جواها وانا بعمل تغيير فيه
                       print(value);
                     },
-                    keyboardType: TextInputType.visiblePassword,
-                    obscureText: true,
+                    keyboardType: TextInputType.visiblePassword,  // تستخدم للفليديشن والتسهيل علي المستخدم
+                    obscureText: true,   // تستخدم لعمل النص نجوم
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      prefixIcon: Icon(
+                      border: OutlineInputBorder(),  // لعمل اطار له
+                      prefixIcon: Icon(  // ايقون في البداية
                         Icons.lock,
                       ),
-                      suffixIcon: Icon(
+                      suffixIcon: Icon(   // ايقون في النهاية
                         Icons.remove_red_eye,
                       ),
-                      labelText: 'Password',
+                      labelText: 'Password',   // اسم يوضح الحقل تدخل فيه ايه وفي حاجة تانية اسمها hint text
 
                     ),
                   ),
