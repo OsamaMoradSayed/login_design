@@ -46,7 +46,9 @@ class LoginScreen extends StatelessWidget {
                       labelText: 'Email',
                     ),
                   ),
-                  SizedBox(height: 15,),
+                  SizedBox(  // عمل صندوق فاضي تستخدم مع ال column
+                    height: 15,
+                  ),
                   TextFormField(
                     controller: passwordController,   // اقدر اتحكم في اللي جواها
                     onFieldSubmitted: (value){    // اطلع القيمة اللي جواها لما اضغط submit
